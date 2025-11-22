@@ -38,3 +38,49 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+---
+
+## To-Do App (this project)
+
+This workspace now contains a simple client-side To-Do application at `src/pages/index.js` with these features:
+
+- Create tasks
+- Update/edit tasks
+- Delete tasks
+- Mark tasks complete / incomplete
+- Filter by **To Do** and **Completed** tabs
+- Search tasks by text
+- Local persistence using `localStorage`
+
+### Run locally
+
+Use one of the package manager scripts:
+
+```powershell
+npm install
+npm run dev
+# then open http://localhost:3000
+```
+
+### Deploy to Vercel
+
+1. If you don't have the Vercel CLI, install it (optional):
+
+```powershell
+npm i -g vercel
+```
+
+2. From the repo root run:
+
+```powershell
+vercel login
+vercel
+```
+
+Follow the interactive prompts; Vercel will detect this is a Next.js app and deploy it.
+
+Alternatively, use the Vercel dashboard: connect your GitHub repository and deploy the `main` branch.
+
+After deployment, your app will be live on a Vercel URL. Any changes pushed to the connected branch will trigger automatic redeploys.
+
